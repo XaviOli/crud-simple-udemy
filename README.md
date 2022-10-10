@@ -23,3 +23,7 @@ Instalando en la terminal npm i nanoid para generar números aleatorios de ident
 Le pedimos al usuario que añada una nueva tarea, siempre que el input esté vacío.
 
 ![Link imagen](./src/img/crud-5.png)
+
+Aquí puedes probar la app:
+
+[Project](https://strong-selkie-a975ce.netlify.app/)
