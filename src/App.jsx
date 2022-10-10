@@ -6,6 +6,7 @@ function App() {
   const [tarea, setTarea] = React.useState('')
   const [tareas, setTareas] = React.useState([])
   const [modoEdicion, setModoEdicion] = React.useState(false)
+  const [id, setId] = React.useState('')
 
 
   const agregarTarea = e => {
@@ -36,6 +37,23 @@ function App() {
     console.log(item)
     setModoEdicion(true)
     setTarea(item.NombreTarea)
+    setId(item.id)
+  }
+
+  const editarTarea = (e) => {
+    e.preventDefault()
+    if(!tarea.trim()){
+      console.log('Elemento vacío')
+      return
+    }
+
+    const arrayEditado = tareas.map(
+      item => item.id === id ? {id:id, nombreTarea:tarea} : item
+      )
+      setTareas(arrayEditado)
+      setModoEdicion(false)
+      setTarea('')
+      setId('')
   }
 
   return (
@@ -46,7 +64,6 @@ function App() {
         <div className="col-8">
           <h4 className="text-center">Lista de tareas</h4>
           <ul className="list-group">
-
             {
               tareas.map(item => (
                 <li className="list-group-item" key={item.id}>
@@ -65,12 +82,9 @@ function App() {
                 >
                   Editar
                 </button>
-
-
-            </li>
+              </li>
               ))
             }
-
           </ul>
         </div>
         <div className="col-4">
@@ -79,7 +93,7 @@ function App() {
               modoEdicion ? 'Editar tarea' : 'Agregar Tarea'
             }
           </h4>
-          <form onSubmit={ agregarTarea }>
+          <form onSubmit={ modoEdicion ? editarTarea : agregarTarea }>
             <input
               type="text"
               className="form-control mb-2"
