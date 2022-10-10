@@ -7,10 +7,17 @@ function App() {
       <hr/>
       <div className="row">
         <div className="col-8">
-          Listas de tareas
+          <h4 className="text-center">Lista de tareas</h4>
+          <ul className="list-group">
+            <li className="list-group-item">
+              <span className="lead">Nombre de la tarea</span>
+              <button className="btn btn-danger btn-sm float-right mx-2">Eliminar</button>
+              <button className="btn btn-warning btn-sm float-right">Editar</button>
+            </li>
+          </ul>
         </div>
         <div className="col-4">
-          Formulario
+          <h4 className="text-center">Formulario</h4>
         </div>
       </div>
     </div>
