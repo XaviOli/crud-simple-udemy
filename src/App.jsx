@@ -18,6 +18,14 @@ function App() {
         </div>
         <div className="col-4">
           <h4 className="text-center">Formulario</h4>
+          <form>
+            <input
+              type="text"
+              className="form-control mb-2"
+              placeholder="Añade tarea"
+            />
+            <button className="btn btn-dark btn-block" type="submit">Agregar</button>
+          </form>
         </div>
       </div>
     </div>
