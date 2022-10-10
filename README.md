@@ -13,3 +13,7 @@ En la etiqueta formulario añadimos los botones con la className para Bootstrap
 ## `ID aleatorios`
 
 Instalando en la terminal npm i nanoid para generar números aleatorios de identificadores únicos dentro del array de objetos.
+
+## `Agregar tarea`
+
+![Link imagen](./src/img/crud-3.png)
