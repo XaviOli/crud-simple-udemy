@@ -17,3 +17,9 @@ Instalando en la terminal npm i nanoid para generar números aleatorios de ident
 ## `Agregar tarea`
 
 ![Link imagen](./src/img/crud-3.png)
+
+## `Mensaje de error`
+
+Le pedimos al usuario que añada una nueva tarea, siempre que el input esté vacío.
+
+![Link imagen](./src/img/crud-5.png)
