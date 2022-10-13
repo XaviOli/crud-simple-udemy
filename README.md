@@ -1,4 +1,4 @@
-# CRUD Simple Ûdemy
+# CRUD Simple ûdemy
 
 Proyecto para poner en práctica conocimientos de REACT & Bootstrap 5
 
